@@ -1,0 +1,88 @@
+styles.css
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffc0cb; /* Couleur de base: rose */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; /* Transition douce lors du changement de couleur */
+}
+
+#result {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Différentes couleurs pour la calculatrice */
+.color-1 {
+    background-color: #ffcccb; /* Rouge pâle */
+}
+
+.color-2 {
+    background-color: #add8e6; /* Bleu clair */
+}
+
+.color-3 {
+    background-color: #90ee90; /* Vert pâle */
+}
+
+.color-4 {
+    background-color: #ffffe0; /* Jaune pâle */
+}
+
+.color-5 {
+    background-color: #dda0dd; /* Lavande */
+}
+
+/* Style pour le smiley */
+#smiley {
+    font-size: 50px;
+    position: absolute;
+    top: 80%; /* Position sous la calculatrice */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease;  /* Animation douce */
+    opacity: 1;
+}
+
+/* Ajouter une animation de disparition douce si nécessaire */
+#smiley.hidden {
+    opacity: 0;
+}
+
